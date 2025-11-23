@@ -1,9 +1,8 @@
 package svc
 
 import (
-	"WMSS/user/rpc/internal/config"
-	"WMSS/user/rpc/model"
-
+	"github.com/Nozomi9967/wmss-user-rpc/internal/config"
+	"github.com/Nozomi9967/wmss-user-rpc/model"
 	"github.com/zeromicro/go-zero/core/stores/sqlx"
 	"github.com/zeromicro/go-zero/rest"
 	"gorm.io/gorm"

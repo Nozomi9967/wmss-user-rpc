@@ -7,9 +7,9 @@ package server
 import (
 	"context"
 
-	"WMSS/user/rpc/internal/logic"
-	"WMSS/user/rpc/internal/svc"
-	"WMSS/user/rpc/pb"
+	"github.com/Nozomi9967/wmss-user-rpc/internal/logic"
+	"github.com/Nozomi9967/wmss-user-rpc/internal/svc"
+	__ "github.com/Nozomi9967/wmss-user-rpc/pb"
 )
 
 type UserServer struct {

@@ -7,8 +7,7 @@ package user
 import (
 	"context"
 
-	"WMSS/user/rpc/pb"
-
+	__ "github.com/Nozomi9967/wmss-user-rpc/pb"
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"
 )

@@ -1,12 +1,11 @@
 package logic
 
 import (
-	"WMSS/user/rpc/model"
 	"context"
 
-	"WMSS/user/rpc/internal/svc"
-	"WMSS/user/rpc/pb"
-
+	"github.com/Nozomi9967/wmss-user-rpc/internal/svc"
+	"github.com/Nozomi9967/wmss-user-rpc/model"
+	__ "github.com/Nozomi9967/wmss-user-rpc/pb"
 	"github.com/zeromicro/go-zero/core/logx"
 )
 
