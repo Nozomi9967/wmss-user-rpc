@@ -1,0 +1,10 @@
+Name: user.rpc
+ListenOn: 0.0.0.0:9090
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: user.rpc
+
+# MySQL 数据库配置
+Mysql:
+  DataSource: root:darling1224@tcp(127.0.0.1:3306)/wmss?charset=utf8mb4&parseTime=true&loc=Local

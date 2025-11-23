@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package user;
+// 假设生成的代码放在当前目录，Go包名为user（可根据实际项目路径调整）
+option go_package = "./";
+
+// 获取用户信息请求
+message GetUserRequest {
+  string user_id = 1; // 用户唯一标识（必填）
+}
+
+// 获取用户信息响应（对应UserInfo结构体字段）
+message GetUserResponse {
+  string user_id = 1;                // 用户ID
+  string user_name = 2;              // 用户名
+  string real_name = 3;              // 真实姓名
+  string role_id = 4;                // 角色ID
+  string department = 5;             // 部门
+  string position = 6;               // 职位
+  string contact_phone = 7;          // 联系电话
+  string user_status = 8;            // 用户状态
+  string last_login_time = 9;       // 最后登录时间
+  string password_expire_time = 10;  // 密码过期时间
+  string create_time = 11;           // 创建时间
+  string update_time = 12;           // 更新时间
+}
+
+// 用户RPC服务定义（仅保留获取用户信息接口）
+service User {
+  // 获取用户详情信息
+  rpc GetUserInfo (GetUserRequest) returns (GetUserResponse);
+}
