@@ -4,11 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"WMSS/user/rpc/internal/config"
-	"WMSS/user/rpc/internal/server"
-	"WMSS/user/rpc/internal/svc"
-	"WMSS/user/rpc/pb"
-
+	"github.com/Nozomi9967/wmss-user-rpc/internal/config"
+	"github.com/Nozomi9967/wmss-user-rpc/internal/server"
+	"github.com/Nozomi9967/wmss-user-rpc/internal/svc"
+	__ "github.com/Nozomi9967/wmss-user-rpc/pb"
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"
 	"github.com/zeromicro/go-zero/zrpc"
